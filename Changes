@@ -1,0 +1,4 @@
+0.01   2008-12-16
+
+- This code was extracted from Moose::Policy, and works without
+  needing said module.

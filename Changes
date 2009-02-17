@@ -1,3 +1,8 @@
+0.02   2008-02-06
+
+- Add a missing dependency on Moose so it gets tested.
+
+
 0.01   2008-12-16
 
 - This code was extracted from Moose::Policy, and works without

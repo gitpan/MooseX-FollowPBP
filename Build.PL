@@ -6,7 +6,8 @@ use Module::Build;
 my $builder = Module::Build->new
     ( module_name        => 'MooseX::FollowPBP',
       license            => 'perl',
-      requires           => { },
+      requires           => { 'Moose' => '0.56',
+                            },
       build_requires     => { 'Test::More' => '0',
                             },
       create_makefile_pl => 'passthrough',

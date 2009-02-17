@@ -3,9 +3,9 @@ package MooseX::FollowPBP;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
-use Moose 0.5504 ();
+use Moose 0.56 ();
 use Moose::Exporter;
 use Moose::Util::MetaRole;
 use MooseX::FollowPBP::Role::Attribute;

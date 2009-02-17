@@ -22,13 +22,13 @@ DESCRIPTION
     attribute, then that attribute's naming scheme is left unchanged.
 
 AUTHOR
-    Dave Rolsky, "<autarch@urth.org>"
+    Dave Rolsky, `<autarch@urth.org>'
 
 BUGS
     Please report any bugs or feature requests to
-    "bug-moosex-followpbp@rt.cpan.org", or through the web interface at
-    <http://rt.cpan.org>. I will be notified, and then you'll automatically
-    be notified of progress on your bug as I make changes.
+    `bug-moosex-followpbp@rt.cpan.org', or through the web interface at
+    http://rt.cpan.org. I will be notified, and then you'll automatically be
+    notified of progress on your bug as I make changes.
 
 COPYRIGHT & LICENSE
     Copyright 2008 Dave Rolsky, All Rights Reserved.

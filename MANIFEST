@@ -1,13 +1,19 @@
-Build.PL
 Changes
+INSTALL
+LICENSE
+MANIFEST
+META.json
+META.yml
+Makefile.PL
+README
+SIGNATURE
+dist.ini
 lib/MooseX/FollowPBP.pm
 lib/MooseX/FollowPBP/Role/Attribute.pm
-Makefile.PL
-MANIFEST			This list of files
-META.yml
-README
 t/basic.t
-t/kwalitee.t
-t/pod-coverage.t
-t/pod.t
-SIGNATURE    Added here by Module::Build
+t/release-eol.t
+t/release-kwalitee.t
+t/release-no-tabs.t
+t/release-pod-coverage.t
+t/release-pod-spell.t
+t/release-pod-syntax.t

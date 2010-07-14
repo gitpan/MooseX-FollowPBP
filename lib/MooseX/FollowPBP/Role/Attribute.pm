@@ -1,4 +1,7 @@
 package MooseX::FollowPBP::Role::Attribute;
+BEGIN {
+  $MooseX::FollowPBP::Role::Attribute::VERSION = '0.03';
+}
 
 use strict;
 use warnings;
@@ -44,9 +47,18 @@ no Moose::Role;
 
 1;
 
+
+
+__END__
+=pod
+
 =head1 NAME
 
-MooseX::FollowPBP::Role::Attribute - Names accessors in the I<Perl Best Practices> style
+MooseX::FollowPBP::Role::Attribute
+
+=head1 VERSION
+
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -64,14 +76,15 @@ follow the style recommended in I<Perl Best Practices>.
 
 =head1 AUTHOR
 
-Dave Rolsky, C<< <autarch@urth.org> >>
+  Dave Rolsky <autarch@urth.org>
 
-=head1 COPYRIGHT & LICENSE
+=head1 COPYRIGHT AND LICENSE
 
-Copyright 2008 Dave Rolsky, All Rights Reserved.
+This software is Copyright (c) 2010 by Dave Rolsky.
 
-This program is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+This is free software, licensed under:
+
+  The Artistic License 2.0
 
 =cut
 

@@ -1,41 +1,37 @@
 package MooseX::FollowPBP;
+BEGIN {
+  $MooseX::FollowPBP::VERSION = '0.03';
+}
 
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
-
-use Moose 0.56 ();
+use Moose 0.94 ();
 use Moose::Exporter;
 use Moose::Util::MetaRole;
 use MooseX::FollowPBP::Role::Attribute;
 
-Moose::Exporter->setup_import_methods();
-
-sub init_meta
-{
-    shift;
-    my %p = @_;
-
-    Moose->init_meta(%p);
-
-    return
-        Moose::Util::MetaRole::apply_metaclass_roles
-            ( for_class => $p{for_class},
-              attribute_metaclass_roles =>
-              ['MooseX::FollowPBP::Role::Attribute'],
-            );
-}
+Moose::Exporter->setup_import_methods(
+    class_metaroles => {
+        attribute => ['MooseX::FollowPBP::Role::Attribute'],
+    },
+);
 
 1;
 
-__END__
+# ABSTRACT: Name your accessors get_foo() and set_foo()
+
+
 
 =pod
 
 =head1 NAME
 
 MooseX::FollowPBP - Name your accessors get_foo() and set_foo()
+
+=head1 VERSION
+
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -59,10 +55,6 @@ get and set method will also have an underscore prefix.
 If you explicitly set a "reader" or "writer" name when creating an
 attribute, then that attribute's naming scheme is left unchanged.
 
-=head1 AUTHOR
-
-Dave Rolsky, C<< <autarch@urth.org> >>
-
 =head1 BUGS
 
 Please report any bugs or feature requests to
@@ -70,11 +62,20 @@ C<bug-moosex-followpbp@rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
-=head1 COPYRIGHT & LICENSE
+=head1 AUTHOR
 
-Copyright 2008 Dave Rolsky, All Rights Reserved.
+  Dave Rolsky <autarch@urth.org>
 
-This program is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2010 by Dave Rolsky.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0
 
 =cut
+
+
+__END__
+

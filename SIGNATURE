@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.55.
+signed via the Module::Signature module, version 0.61.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,22 +14,28 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 35105e8e625ce7956f4135f37ba57dc482e1feaa Build.PL
-SHA1 ca111e3b4a72da49d75247875d48359be5da5c9e Changes
-SHA1 7d5ce4dc7bda77c1c80e37fed3d4a46ef36da8c6 MANIFEST
-SHA1 9985ffef19a10fd954c24cdcb21dd47660f51d79 META.yml
-SHA1 6c50484734b0642393237a9143c1cd46fcdcec66 Makefile.PL
-SHA1 95c670a30e031d60fb7f843e1095c2b7e0b2d91c README
-SHA1 c5be9d27908f094dd4656c4d60e357787c9987b1 lib/MooseX/FollowPBP.pm
-SHA1 a000d94e04fa96b6f9168ff219a12c8e4b1f6dd4 lib/MooseX/FollowPBP/Role/Attribute.pm
-SHA1 d8c98acd88f7691c5274d527653e2dabb7ad3808 t/basic.t
-SHA1 9ade2293d6e5ea77d94532132c89cd205ea85ed7 t/kwalitee.t
-SHA1 1e31329479c8a8c8d4c4de1382e89dc8c85ea68b t/pod-coverage.t
-SHA1 cec881e89926d320475f9de2b7fad02c2169f510 t/pod.t
+SHA1 e39202d6900111d8217bf8df2ad0168d7e8dd713 Changes
+SHA1 bf82cb551685805c60f322d035eaf4c716d41ecb INSTALL
+SHA1 23c628b4a8a36738405ccdacaeb912d2e727b4c0 LICENSE
+SHA1 acef0d84fb59cdd7e64b975050e1df12230abfdb MANIFEST
+SHA1 e6c6feb68b69dfe255ec5fdb8b6164bf45b605b7 META.json
+SHA1 60a5343f1b9bbd288615f1e222b9186566e33b37 META.yml
+SHA1 f83fd9f6fbe5420fcfa1515b5d3e57ad87f9d0fe Makefile.PL
+SHA1 49b9b6040f5b2b6f7a263a5b85ae950df17e24e1 README
+SHA1 a9db364d1b13e8626dcc6638c307491d32a7195d dist.ini
+SHA1 1b4daac8f22657ba6062ba7b2bb7a23de27a931b lib/MooseX/FollowPBP.pm
+SHA1 0cc5f96f5d2c2e8c6e307c8d0c6bdb53ae289edb lib/MooseX/FollowPBP/Role/Attribute.pm
+SHA1 35bb68c329b8a6a3038cf4ca0e45a0ef3558cab9 t/basic.t
+SHA1 24b525e3c18f37f8022a01ec30de757cefb679ff t/release-eol.t
+SHA1 961a1e2c92d836c8cad2d34b784cbc75345dec63 t/release-kwalitee.t
+SHA1 455d1dd1867212a665ad5ea4126b572411de300c t/release-no-tabs.t
+SHA1 9433c240fe590bc404ab68ff63984df763e347ed t/release-pod-coverage.t
+SHA1 cb3e2ea10fc7e63d3c8c82561439919d5780bace t/release-pod-spell.t
+SHA1 9775e90d40f094f3e5a23c695d6e6e436a2232c3 t/release-pod-syntax.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.9 (GNU/Linux)
+Version: GnuPG v1.4.10 (GNU/Linux)
 
-iEYEARECAAYFAkmaDfIACgkQ3Or3ZzQuifOhlgCcDs1hwoZiGToaSBZadCPpLPZs
-nlQAoJbbmXLvXcSIJLDaiePJflTvTCEd
-=GGWE
+iEYEARECAAYFAkw+IZMACgkQIgMCsV8qvRLCVQCfSb+6jlXr6tn1bUigiKuU5he2
+TCAAmQFVfKNTmPwu/5NtXogw6rj+70m1
+=FPdW
 -----END PGP SIGNATURE-----

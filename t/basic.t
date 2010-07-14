@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 18;
+use Test::More;
 
 
 {
@@ -16,17 +16,6 @@ use Test::More tests => 18;
 {
     package PBP;
 
-    use MooseX::FollowPBP;
-    use Moose;
-
-    has 'thing' => ( is => 'rw' );
-    has '_private' => ( is => 'rw' );
-}
-
-{
-    package PBP2;
-
-    # Make sure load order doesn't matter
     use Moose;
     use MooseX::FollowPBP;
 
@@ -56,11 +45,6 @@ ok( PBP->can('set_thing'), 'PBP->set_thing() exists' );
 ok( PBP->can('_get_private'), 'PBP->_get_private() exists' );
 ok( PBP->can('_set_private'), 'PBP->_set_private() exists' );
 
-ok( PBP2->can('get_thing'), 'PBP2->get_thing() exists' );
-ok( PBP2->can('set_thing'), 'PBP2->set_thing() exists' );
-ok( PBP2->can('_get_private'), 'PBP2->_get_private() exists' );
-ok( PBP2->can('_set_private'), 'PBP2->_set_private() exists' );
-
 ok( PBP3->can('get_ro'), 'PBP3->get_ro exists' );
 ok( ! PBP3->can('set_ro'), 'PBP3->set_ro does not exist' );
 ok( ! PBP3->can('get_thing'), 'PBP3->get_thing does not exist' );
@@ -68,3 +52,4 @@ ok( ! PBP3->can('set_thing'), 'PBP3->set_thing does not exist' );
 ok( ! PBP3->can('get_thing2'), 'PBP3->get_thing2 does not exist' );
 ok( ! PBP3->can('set_thing2'), 'PBP3->set_thing2 does not exist' );
 
+done_testing();

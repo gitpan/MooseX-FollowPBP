@@ -34,6 +34,15 @@ use Test::More;
     has 'thing2' => ( is => 'rw', writer => 'set_it' );
 }
 
+{
+    package PBP4;
+
+    use Moose;
+    use MooseX::FollowPBP;
+
+    has 'bare' => ( is => 'bare' );
+}
+
 
 ok( ! Standard->can('get_thing'), 'Standard->get_thing() does not exist' );
 ok( ! Standard->can('set_thing'), 'Standard->set_thing() does not exist' );
@@ -51,5 +60,8 @@ ok( ! PBP3->can('get_thing'), 'PBP3->get_thing does not exist' );
 ok( ! PBP3->can('set_thing'), 'PBP3->set_thing does not exist' );
 ok( ! PBP3->can('get_thing2'), 'PBP3->get_thing2 does not exist' );
 ok( ! PBP3->can('set_thing2'), 'PBP3->set_thing2 does not exist' );
+
+ok( !PBP4->can('get_bare'), 'is => bare attribute is respected' );
+ok( !PBP4->can('set_bare'), 'is => bare attribute is respected' );
 
 done_testing();

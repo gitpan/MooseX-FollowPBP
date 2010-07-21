@@ -1,6 +1,6 @@
 package MooseX::FollowPBP::Role::Attribute;
 BEGIN {
-  $MooseX::FollowPBP::Role::Attribute::VERSION = '0.03';
+  $MooseX::FollowPBP::Role::Attribute::VERSION = '0.04';
 }
 
 use strict;
@@ -8,34 +8,29 @@ use warnings;
 
 use Moose::Role;
 
-
-before '_process_options' => sub
-{
+before _process_options => sub {
     my $class   = shift;
     my $name    = shift;
     my $options = shift;
 
-    if ( exists $options->{is} &&
-         ! ( exists $options->{reader} || exists $options->{writer} ) )
-    {
+    if (   exists $options->{is}
+        && !( exists $options->{reader} || exists $options->{writer} )
+        && $options->{is} ne 'bare' ) {
         my $get;
         my $set;
 
-        if ( $name =~ s/^_// )
-        {
+        if ( $name =~ s/^_// ) {
             $get = '_get_';
             $set = '_set_';
         }
-        else
-        {
+        else {
             $get = 'get_';
             $set = 'set_';
         }
 
         $options->{reader} = $get . $name;
 
-        if ( $options->{is} eq 'rw' )
-        {
+        if ( $options->{is} eq 'rw' ) {
             $options->{writer} = $set . $name;
         }
 
@@ -58,7 +53,7 @@ MooseX::FollowPBP::Role::Attribute
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 

@@ -1,6 +1,6 @@
 package MooseX::FollowPBP;
 BEGIN {
-  $MooseX::FollowPBP::VERSION = '0.03';
+  $MooseX::FollowPBP::VERSION = '0.04';
 }
 
 use strict;
@@ -31,12 +31,12 @@ MooseX::FollowPBP - Name your accessors get_foo() and set_foo()
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
-    use MooseX::FollowPBP;
     use Moose;
+    use MooseX::FollowPBP;
 
     # make some attributes
 

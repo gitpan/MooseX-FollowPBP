@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution MooseX-FollowPBP,
-version 0.03:
+version 0.04:
 
   Name your accessors get_foo() and set_foo()
 

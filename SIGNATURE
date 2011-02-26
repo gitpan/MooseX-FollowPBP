@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.61.
+signed via the Module::Signature module, version 0.66.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,28 +14,28 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 0a07a507c78c3627d133e9682e3e87e563ea531c Changes
-SHA1 bf82cb551685805c60f322d035eaf4c716d41ecb INSTALL
-SHA1 23c628b4a8a36738405ccdacaeb912d2e727b4c0 LICENSE
-SHA1 acef0d84fb59cdd7e64b975050e1df12230abfdb MANIFEST
-SHA1 f2321163f3993e324576b7eaf32ce40f2f686684 META.json
-SHA1 41e93f3967102e9cdab5ff936503459640bf749d META.yml
-SHA1 584e32c3b7c02b4392a890ab510960353a58d3e3 Makefile.PL
-SHA1 90f469351d5944b3ff6444e0df7cf3d8311103ae README
-SHA1 de259567bf6029a6579abe6dbc5883bb897c191b dist.ini
-SHA1 cc967c63e0dc47ae2f01a2a2976270ddc269d3d1 lib/MooseX/FollowPBP.pm
-SHA1 c38de5a57db2699f407fe6aac4133cdc6397c688 lib/MooseX/FollowPBP/Role/Attribute.pm
+SHA1 abf5ca34a025f45c72a145830f9fef34677a0a9c Changes
+SHA1 27291faeba400eab6879fdc0b00e3e53e47233e7 INSTALL
+SHA1 c715d20265d2931c7564fc64abfdc4f8ff33e297 LICENSE
+SHA1 35d3f4ec9c322624a3bd6ee78a260ba6851a40e7 MANIFEST
+SHA1 3bb9eb6d3ea2285d2caf65fd9ffd79613c11f529 META.json
+SHA1 45c628d53551ee1091ae64d742aa2313dc94e747 META.yml
+SHA1 99c1e7f806ff1b92f42049e7bc9b16c438d7cdcd Makefile.PL
+SHA1 70b09749ec37ef7a7f4c852119f31e5e9e9d60c5 README
+SHA1 9e0946ba098a68edc9204cff12ed21a3331bec8e dist.ini
+SHA1 1ee2a9b16b8d6f22f59412f659fde708dfd404e2 lib/MooseX/FollowPBP.pm
+SHA1 823a4ff0b528ab8536d54b7f438ee092f2a4c9e7 lib/MooseX/FollowPBP/Role/Attribute.pm
 SHA1 33235c2593361ec8d256ff6dc65fdd7646189c40 t/basic.t
-SHA1 24b525e3c18f37f8022a01ec30de757cefb679ff t/release-eol.t
-SHA1 961a1e2c92d836c8cad2d34b784cbc75345dec63 t/release-kwalitee.t
+SHA1 a032c41ef6887fab1b900669c2d304fab46680e2 t/release-eol.t
 SHA1 455d1dd1867212a665ad5ea4126b572411de300c t/release-no-tabs.t
 SHA1 9433c240fe590bc404ab68ff63984df763e347ed t/release-pod-coverage.t
 SHA1 cb3e2ea10fc7e63d3c8c82561439919d5780bace t/release-pod-spell.t
 SHA1 9775e90d40f094f3e5a23c695d6e6e436a2232c3 t/release-pod-syntax.t
+SHA1 2a2ce8b635d1df973c5ca6656261faedbd84e90f t/role.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (GNU/Linux)
 
-iEYEARECAAYFAkxGPUsACgkQIgMCsV8qvRKkqgCeMfn1oJsPvWIvnH2il/8kDQRC
-QvMAoJJETSK4udlvA6a9/dqgR695uzkX
-=tVgv
+iEYEARECAAYFAk1pTQIACgkQIgMCsV8qvRLsnACfbIS/o1VoWRjqhX+ePfltsahM
+LhIAnjwr0Bjaz9hWxZcvudv0l+QlzDyj
+=wdkv
 -----END PGP SIGNATURE-----

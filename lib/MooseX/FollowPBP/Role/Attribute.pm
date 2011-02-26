@@ -1,6 +1,6 @@
 package MooseX::FollowPBP::Role::Attribute;
 BEGIN {
-  $MooseX::FollowPBP::Role::Attribute::VERSION = '0.04';
+  $MooseX::FollowPBP::Role::Attribute::VERSION = '0.05';
 }
 
 use strict;
@@ -53,15 +53,16 @@ MooseX::FollowPBP::Role::Attribute
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 
-  Moose::Util::MetaRole::apply_metaclass_roles
-      ( for_class => $p{for_class},
-        attribute_metaclass_roles =>
-        ['MooseX::FollowPBP::Role::Attribute'],
-      );
+  Moose::Util::MetaRole::apply_metaclass_roles(
+      for             => $p{for_class},
+      class_metaroles => {
+          attribute => ['MooseX::FollowPBP::Role::Attribute'],
+      },
+  );
 
 =head1 DESCRIPTION
 
@@ -71,15 +72,15 @@ follow the style recommended in I<Perl Best Practices>.
 
 =head1 AUTHOR
 
-  Dave Rolsky <autarch@urth.org>
+Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2010 by Dave Rolsky.
+This software is Copyright (c) 2011 by Dave Rolsky.
 
 This is free software, licensed under:
 
-  The Artistic License 2.0
+  The Artistic License 2.0 (GPL Compatible)
 
 =cut
 

@@ -22,9 +22,9 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'artistic_2',
   'NAME' => 'MooseX::FollowPBP',
   'PREREQ_PM' => {
-    'Moose' => '0.94'
+    'Moose' => '1.16'
   },
-  'VERSION' => '0.04',
+  'VERSION' => '0.05',
   'test' => {
     'TESTS' => 't/*.t'
   }
